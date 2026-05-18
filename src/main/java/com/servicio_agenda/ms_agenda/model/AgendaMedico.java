@@ -19,5 +19,6 @@ public class AgendaMedico {
     private Long idMedico;
     private LocalDateTime fechaHoraInicio;
     private LocalDateTime fechaHoraFin;
+    @NotBlank(message = "El estado no puede estar vacío")
     private String estado;
 }
